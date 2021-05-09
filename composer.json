@@ -1,0 +1,42 @@
+{
+    "name": "rifatozmen/mikrotik-device",
+    "description": "Mikrotik API and device management",
+    "keywords": [
+        "rifatozmen",
+        "mikrotik-device"
+    ],
+    "homepage": "https://github.com/rifatozmen/mikrotik-device",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "DevilMorgan",
+            "email": "rifat.ozmen@eksennetwork.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RifatOZMEN\\MikrotikDevice\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RifatOZMEN\\MikrotikDevice\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
